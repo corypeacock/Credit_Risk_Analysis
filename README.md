@@ -259,4 +259,8 @@ The predictions and evaluation match the process above. The results of the evalu
 ![eeac_results](images/eeac_results.png)  
 
 ## Summary
-lorem ipsum
+All six of the model performed well and better than mere chance. The four models that relied upon oversampling, undersampling, or a combination of the two (models 1-4), each produced accuracy results at approximately 62%. While the further details of the performance of each of these first four models differed, they did not do in a sufficiently different way to explore those differences, especially when the next two models performed noticeably better.  
+
+The fifth model, the Balanced Random Forest Classifier model, produced an accuracy score of 77.1%. This is significantly better than the four previous models. The low_risk recall score was 0.91, which means that 9% of actually low_risk cases were classified as fraudulent. This is inconvient, but not a deleterious result. The high_risk recall score, however, was 0.63, meaning that 37% of actually fraudulent cases were classified as low_risk. This alone would suggest investigation into these false positive classifications. It could warrant a further refinement of the model if necessary.  
+
+The sixth model, the Easy Ensemble AdaBoost Classifier model, was the best performing model of the six models explored here. It is also the recommended model to use moving forward. The accuracy score was 90.2%. The recall for low_risk was 0.96. The recall for high_risk, or fraudulent charges, was a robust 0.85. With support of 92 cases in the testing set, only 14 were misclassified as false positives. The low_risk prediction precision was 99.9% (rounded up in the image above to 100%). For the purposes of this task, this sixth model, the Easy Ensemble AdaBoost Classifier model, is clearly the best choice of those evaluated.  
