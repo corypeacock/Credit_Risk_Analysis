@@ -2,7 +2,7 @@
 BC Mod 17
 
 ## Overview
-The purpose of this analysis is to assess credit card risk by means of various machine learning models. Using a credit card dataset from LendingClub, there are below several models of machine learning in order to determine fraudulent charges. As credit card charge classifications, legitimate and fraudulent, present an inherently unbalanced classification problem, the models below account for this by various means of oversampling, undersampling, or a combined approach. The performance of each model is assessed. A recommendation can be found in the summary conclusion at the end of this report.  
+The purpose of this analysis is to assess credit card risk by means of various machine learning models. Using a credit card dataset from LendingClub, there are below several models of machine learning in order to determine fraudulent charges. As credit card charge classifications, legitimate and fraudulent, present an inherently unbalanced classification problem, the first four models below account for this by various means of oversampling, undersampling, or a combined approach. The last two models use an enseble model, combining techniques. The performance of each model is assessed. A recommendation can be found in the summary conclusion at the end of this report.  
 
 ### Resources
 * Machine Learning Dev Environment
